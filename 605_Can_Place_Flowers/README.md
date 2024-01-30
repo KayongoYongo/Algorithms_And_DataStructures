@@ -27,3 +27,7 @@ of the list does not have any relation to the `flowerbed` list. Any changes made
 2. Deal with the three edge cases separately. In terms of order, start with the case involving the first element. Otherwise, the output
 will show irregular behavior.
 3. Finally, confirm if the `extra_flower` >= `n` and then return a boolean value.
+
+# Space complexity and time complexity
+Time complexity is 0(n) since it depends on the size of the flowerbed.
+Space complexity is 0(1) since it uses a constant amount of extra space.
