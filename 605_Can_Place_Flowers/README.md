@@ -6,7 +6,7 @@ Given an integer array `flowerbed` containing `0's` and `1's`, where 0 means emp
 
 # Thoughts on the problem
 The problem is classified as easy. At the time of writing, it has an acceptance rate of 29.5%. After many trials and errors, I
-finally understood why it has such a low acceptance rate. The major things to consider are the acceptance rates.
+finally understood why it has such a low acceptance rate. The major things to consider are the edge cases.
 
 # Things to consider
 1. Since the problem involves finding the appearance of `1's` in the list, I need to have a counter that finds the number
