@@ -21,3 +21,9 @@ The question returns true if `n` new flowers can be planted in the garden. So, i
 if the question asked n flowers **ONLY**.
 
 # The solution
+1. In order to find the number of extra flowers that can be added, we need to find the number of `1's` before and after they have
+been added to the list. My solution for theis was creating a deep copy of the `flowerbed` list. My reason for this is that a deep copy
+of the list does not have any relation to the `flowerbed` list. Any changes made to the `flowerbed` won't affect the deep copy.
+2. Deal with the three edge cases separately. In terms of order, start with the case involving the first element. Otherwise, the output
+will show irregular behavior.
+3. Finally, confirm if the `extra_flower` >= `n` and then return a boolean value.
