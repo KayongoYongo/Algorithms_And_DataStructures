@@ -1,9 +1,16 @@
 #!/usr/bin/python3
-
+"""
+This is the most optimized solution
+"""
 from typing import List
 
 class Solution:
     def removeElement(self, nums: List[int], val: int) -> int:
+        """
+        This function takes an element that exists
+        and returns the number of occurences of that element
+        in the list
+        """
         left_ptr = 0
 
         for right_ptr in range(len(nums)):
