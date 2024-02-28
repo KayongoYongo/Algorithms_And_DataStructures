@@ -13,14 +13,18 @@ def moveZeroes(nums: List[int]) -> None:
     Return:
         None
     """
-    # Initializ two empty pointers
-    l, r = 0, 0
+    # Initializ an empty pointer
+    non_zero = 0
+
+    # The purpose of the above pointer is to store the position of the next non zero element
 
     # Iterate through the array using the right pointer
-    for r in range(len(nums)):
-        if nums[r] != 0:
-            nums[l], nums[r] = nums[r], nums[l]
-            l += 1
+    for i in range(len(nums)):
+        if nums[i] != 0:
+            # Carry out a swap operation
+            nums[i], nums[non_zero] = nums[non_zero], nums[i]
+            # This stores the position of the next non zero element
+            non_zero += 1
 
     return nums
 
