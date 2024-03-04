@@ -25,7 +25,8 @@ Constraints:
 
 Follow-up: Could you solve the problem in linear time and in `O(1)` space?
 
-Solution:
+# Solution:
+
 The **Boyer-Moore Voting Algorithm** is an efficient algorithm used to find the majority element in a given array or sequence.
 The majority element is the element that appears more than n/2 times in the array, where n is the size of the array.
 
