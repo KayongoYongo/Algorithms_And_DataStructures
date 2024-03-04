@@ -56,3 +56,10 @@ Conditions to use the Boyer-Moore Voting Algorithm:
 3. The algorithm requires a linear pass through the array, making it quite efficient with O(n) time complexity.
 4. It doesn't require extra space except for two variables (candidate and count), making it a space-efficient algorithm.
 Overall, the Boyer-Moore Voting Algorithm is a handy technique for finding the majority element in an array with a simple and efficient approach.
+
+# Efficiency
+## Time complexity
+The time complexity is `O(n)`
+
+## Space complexity
+The space complexity is `O(1)`. The algorithm uses constant space for `candidate` and `count` regardless of the size of the array.
