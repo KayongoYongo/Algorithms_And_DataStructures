@@ -25,7 +25,7 @@ def romanToInt(s: str) -> int:
     
     # This value stores the value of the total
     total = 0
-    
+
     # Stores the value of the previous value
     prev_value = 0
 
