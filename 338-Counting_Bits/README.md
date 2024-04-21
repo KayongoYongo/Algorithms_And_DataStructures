@@ -21,7 +21,6 @@ Explanation:
 3 --> 11
 4 --> 100
 5 --> 101
- 
 
 Constraints:
 
