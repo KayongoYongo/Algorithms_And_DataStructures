@@ -30,4 +30,6 @@ def removeEvenNumbers(nums: List[int]) -> List[int]:
     return nums[even:]
 
 nums = [1,2,3,5,8,9]
+# Print the list
+
 print(f"The modified list is {removeEvenNumbers(nums)}")
