@@ -1,7 +1,24 @@
 def gcdOfStrings(str1: str, str2: str) -> str:
+    """
+    Description:
+        This function finds the largest possible sub string between two strings.
+
+    Args:
+        str1:Strings to check
+        str2: Strings to check
+
+    Return:
+        The largest possible sub string
+    """
     l1, l2 = len(str1), len(str2)
 
-    for i in range(l1, 0, -1):
+    """
+    The for loop decides the size of the possible sub string.
+    If we start from the beginning, eg for i in range(1, l1 + 1):
+    This will check for the smalles possible sub string.
+    If we start from the end, we will be checking for the largest possible sub string
+    """
+    for i in range(1, l1 + 1):
         # find the factors
         if l1 % i != 0:
             continue
