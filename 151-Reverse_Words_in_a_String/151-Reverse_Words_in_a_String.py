@@ -13,18 +13,20 @@ def reverseWords(s: str) -> str:
     """
 
     # Remove the white spaces before and after the string
-    stripped_words = s.strip()
+    s = s.strip()
 
     # Remove any whtespaces within the string
-    split_string = stripped_words.split()
+    word_list= s.split()
 
-    # The above function converts the string to a list
+    # Use two pointer approach to switch the strings
+    left, right = 0, len(word_list) - 1
 
-    # Next reverse the string.
-    split_string.reverse()
-
-    # Lastly, return the string by converting the list
-    return (' '.join(split_string))
+    while left < right:
+        word_list[left], word_list[right] = word_list[right], word_list[left]
+        left += 1
+        right -= 1
+    
+    return " ".join(word_list)
 
 # Example 1
 string1 = "the sky is blue"
