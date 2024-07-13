@@ -6,6 +6,7 @@ def maxArea(self, height: List[int]) -> int:
     l, r =  0, len(height) - 1
 
     while l < r:
+        # find the area of the container
         area = (r - l) * min(height[l], height[r])
         res = max(res, area)
 
